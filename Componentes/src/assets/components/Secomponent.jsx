@@ -1,7 +1,7 @@
 
-const Secomponent = () => {
+const Secomponent = (props) => {
   return (
-    <div>Segundo componente</div>
+    <div>Segundo componente, a = {props.numeros}, b = {props.valor}</div>
   )
 }
 

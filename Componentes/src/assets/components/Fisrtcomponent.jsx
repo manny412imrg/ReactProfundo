@@ -1,6 +1,7 @@
-const Fisrtcomponent = () => {
+const Fisrtcomponent = ({text, setValor}) => {
+  setValor('12345')
   return (
-    <h1 className="titulos">Hola soy un componente de react</h1>
+    <h1 className="titulos">Hola soy un componente de react, {text}</h1>
   )
 }
 
