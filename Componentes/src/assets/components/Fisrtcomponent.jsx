@@ -1,7 +1,11 @@
-const Fisrtcomponent = ({text, setValor}) => {
-  setValor('12345')
+const Fisrtcomponent = ({text, handleValorCambiado, setValor}) => {
+
   return (
-    <h1 className="titulos">Hola soy un componente de react, {text}</h1>
+    <>
+      <h2 className="titulos">Hola soy un componente de react, {text}</h2>
+      <input type="text" onChange={(e)=>handleValorCambiado(e.target.value)} /><br/>
+      <input type="text" onChange={(e)=>setValor(e.target.value)}></input>
+    </>
   )
 }
 
